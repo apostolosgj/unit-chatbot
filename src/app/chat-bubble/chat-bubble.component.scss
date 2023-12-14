@@ -1,0 +1,23 @@
+
+.bubble{
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  border: 1px solid rgba(79, 79, 79, 0.381);
+  border-radius: 15px;
+  padding: 3px;
+}
+
+.img-container{
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+
+  img{
+    border: 50%;
+    height: 48px;
+  }
+}
+
+
+

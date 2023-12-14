@@ -1,16 +1,22 @@
-.chat-card{
-  background-color: #457b9d;
-  width: 1000px;
-  height: 500px;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+textarea{
+  width: 100vw;
+  max-width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  resize: none;
+  background-color: #343541;
+  font-size: large;
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  color: aliceblue;
 }
 
-.chat-dialogue{
-  background-color: #a8dadc;
-  width: 800px;
-  height: 400px;
-  margin: 10px;
-  border-radius: 5px;
+.textarea::placeholder{
+  opacity: 0.5;
+}
+
+.chat-card{
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  color: aliceblue;
 }
