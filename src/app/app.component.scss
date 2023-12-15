@@ -1,3 +1,24 @@
 body{
   background-color: #343541;
 }
+
+.chat-container
+{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.home-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.input
+{
+  margin-top: auto;
+  margin-bottom: 10px;
+}
