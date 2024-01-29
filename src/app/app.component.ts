@@ -8,12 +8,13 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ChatComponent, ChatBubbleComponent, PromptInputComponent, MatButtonModule, MatIconModule, MatSidenavModule, SidenavComponent],
+  imports: [CommonModule, RouterOutlet, ChatComponent, ChatBubbleComponent, PromptInputComponent, MatButtonModule, MatIconModule, MatSidenavModule, SidenavComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   encapsulation: ViewEncapsulation.None

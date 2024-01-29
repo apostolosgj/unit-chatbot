@@ -1,0 +1,44 @@
+.header-container{
+  width: 100vw;
+  max-width: 100%;
+}
+
+.image
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-box
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.header-controls{
+  display: flex;
+  flex-direction: row;
+}
+
+header
+{
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+}
+
+#bot-name{
+  font-weight: 500;
+}
+
+#bot-role{
+  font-size: small;
+  font-weight: 100;
+}
+
+hr
+{
+  color: rgba(47, 47, 47, 0.574);
+}

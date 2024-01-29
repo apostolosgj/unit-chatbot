@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: row;
   width: max-content;
-  border: 1px solid rgba(79, 79, 79, 0.381);
   border-radius: 15px;
   padding: 3px;
 }
@@ -19,5 +18,10 @@
   }
 }
 
+.bubble-content{
+  background-color: #1c1c1c;
+  border-radius: 25px;
+  padding: 10px;
+}
 
 
