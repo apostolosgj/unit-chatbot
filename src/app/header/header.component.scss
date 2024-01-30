@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  grid-column: 1;
 }
 
 .text-box
@@ -20,13 +21,16 @@
 .header-controls{
   display: flex;
   flex-direction: row;
+  grid-column: 2;
 }
 
 header
 {
-  display: flex;
-  flex-direction: row;
   margin: 15px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+
 }
 
 #bot-name{

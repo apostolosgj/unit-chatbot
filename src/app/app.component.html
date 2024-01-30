@@ -1,13 +1,16 @@
-
 <div class="home-container">
   <app-header></app-header>
-  <app-sidenav></app-sidenav>
-<div class="chat-container">
-  <div class="chat">
-    <app-chat-bubble></app-chat-bubble>
+  <div class="page-container">
+    <div class="sidenav">
+      <app-sidenav></app-sidenav>
+    </div>
+    <div class="chat-container">
+      <div class="chat">
+        <app-chat-bubble></app-chat-bubble>
+      </div>
+      <div class="input">
+        <app-prompt-input></app-prompt-input>
+      </div>
+    </div>
   </div>
-  <div class="input">
-    <app-prompt-input></app-prompt-input>
-  </div>
-</div>
 </div>
