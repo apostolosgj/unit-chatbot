@@ -1,6 +1,9 @@
 .input-wrapper{
   display: flex;
   align-items: center;
+  border-radius: 10px;
+  border-color: white;
+  border: 1.9px solid white;
 }
 
 .prompt-input{
@@ -9,7 +12,7 @@
   height: 35px;
   border-radius: 10px;
   background-color: #121212;
-  border: 0.5px solid #ffffff;
+  border: none;
   color: white;
   font-size: large;
   padding: 5px;
@@ -19,6 +22,7 @@
 .prompt-input:focus{
   outline: none;
   border-color: gray;
+  border: none;
 }
 .prompt-input::placeholder{
   font-size: large;
