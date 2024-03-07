@@ -1,4 +1,4 @@
 export interface Message {
-  text:string;
-  message_id:string;
+  sender:String;
+  message:String;
 }

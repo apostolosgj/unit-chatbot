@@ -9,12 +9,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HeaderComponent } from './header/header.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ChatComponent, ChatBubbleComponent, PromptInputComponent, MatButtonModule, MatIconModule, MatSidenavModule, SidenavComponent, HeaderComponent],
+  imports: [CommonModule, RouterOutlet, ChatComponent, ChatBubbleComponent, PromptInputComponent, MatButtonModule, MatIconModule, MatSidenavModule, SidenavComponent, HeaderComponent, FormsModule, ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   encapsulation: ViewEncapsulation.None

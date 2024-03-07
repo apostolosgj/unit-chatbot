@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import { Message } from '../message'
 import { BehaviorSubject, Observable } from 'rxjs'
+import { botResponse } from '../../botResponse'
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ import { BehaviorSubject, Observable } from 'rxjs'
 export class MessageService {
 
   private messageSubject: BehaviorSubject<Message[]> = new BehaviorSubject<Message[]>([]);
-  parsingUrl = "http://localhost:5005/model/parse" 
+  parsingUrl = "http://localhost:5005/webhooks/rest/webhook" 
   messages = this.messageSubject.asObservable;
 
   constructor(public http:HttpClient) {
@@ -18,16 +19,14 @@ export class MessageService {
 
   
 
-  sendMessage(message: Message): Observable<Message>{
-  
-    var body:Object = {
-      "text": message.text,
-      "message_id": message.message_id
-    }
+  sendMessage(message: Message): Observable<botResponse>{
 
-    return this.http.post<Message>(this.parsingUrl, body);
+
+    return this.http.post<botResponse>(this.parsingUrl, message);
     
   }
+
+  
 
   
   
