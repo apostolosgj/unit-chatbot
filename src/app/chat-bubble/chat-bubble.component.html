@@ -1,8 +1,9 @@
-<div class="bubble">
+<div class="bubble" *ngFor="let message of getMessages()">
   <div class="img-container">
   <img title="bubble-image" src="./assets/images/AI.svg">
 </div>
-  <div class="bubble-content">
-  <p>Lorem ipsulm Lorem ipsulm Lorem ipsulm Lorem ipsulm Lorem ipsulm Lorem ipsulm Lorem ipsulm </p>
+  <div class="bubble-content" >
+  <p>{{message.message}} {{message.text}}</p>
+  <img src="{{message.image}}">
 </div>
 </div>

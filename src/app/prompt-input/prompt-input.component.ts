@@ -28,11 +28,18 @@ export class PromptInputComponent {
 
     let message: Message = {
       sender : "angular_ui",
-      message : prompt
+      message : prompt,
+      timestamp: new Date().toISOString()
     };
 
     console.log(message);
 
-    this.messageService.sendMessage(message).subscribe((x) => console.log(x));
+    this.messageService.addMessage(message)
+    this.messageService.sendMessage(message).subscribe((res) => {
+      res.forEach(message => {
+        console.log(message);
+        this.messageService.addMessage(message);
+      });
+    });
   }
 }
