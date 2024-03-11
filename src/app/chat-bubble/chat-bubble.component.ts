@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { MessageService } from '../services/message.service';
 import { Message } from '../message';
 import { Observable } from 'rxjs';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf, NgClass } from '@angular/common';
 
 
 @Component({
   selector: 'app-chat-bubble',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, NgIf, NgClass],
   templateUrl: './chat-bubble.component.html',
   styleUrl: './chat-bubble.component.scss'
 })

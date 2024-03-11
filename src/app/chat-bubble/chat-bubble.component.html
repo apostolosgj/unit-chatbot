@@ -1,9 +1,16 @@
 <div class="bubble" *ngFor="let message of getMessages()">
   <div class="img-container">
-  <img title="bubble-image" src="./assets/images/AI.svg">
-</div>
-  <div class="bubble-content" >
-  <p>{{message.message}} {{message.text}}</p>
-  <img src="{{message.image}}">
-</div>
+    <img
+      title="bubble-image"
+      [src]="
+        message.sender === 'bot'
+          ? './assets/images/AI.svg'
+          : './assets/images/human.png'
+      "
+    />
+  </div>
+  <div class="bubble-content">
+    <p>{{ message.message }} {{ message.text }}</p>
+    <img *[ngClass]="message.image === '' ? 'hideImg' : 'showImg' " src="{{ message.image }}" />
+  </div>
 </div>
