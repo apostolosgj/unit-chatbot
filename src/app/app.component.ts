@@ -11,12 +11,13 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgFor } from '@angular/common';
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ChatComponent, ChatBubbleComponent, PromptInputComponent, MatButtonModule, MatIconModule, MatSidenavModule, SidenavComponent, HeaderComponent, FormsModule, ReactiveFormsModule, NgFor],
+  imports: [CommonModule, RouterOutlet, ChatComponent, ChatBubbleComponent, PromptInputComponent, MatButtonModule, MatIconModule, MatSidenavModule, SidenavComponent, HeaderComponent, FormsModule, ReactiveFormsModule, NgFor, MatDialogModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   encapsulation: ViewEncapsulation.None

@@ -5,7 +5,7 @@ import { MessageService } from '../services/message.service';
 import { Message } from '../message';
 import { FormControl } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { timestamp } from 'rxjs';
+import { elementAt, timestamp } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 import { botResponse } from '../../botResponse';
 

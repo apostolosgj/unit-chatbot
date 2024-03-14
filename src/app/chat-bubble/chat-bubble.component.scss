@@ -5,7 +5,19 @@
   width: max-content;
   border-radius: 20px;
   padding: 3px;
-  width: 100%
+  width: 100%;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .img-container{
