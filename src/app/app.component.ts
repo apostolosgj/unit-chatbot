@@ -12,12 +12,12 @@ import { HeaderComponent } from './header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgFor } from '@angular/common';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
-
+import { BugReportComponent } from './bug-report/bug-report.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ChatComponent, ChatBubbleComponent, PromptInputComponent, MatButtonModule, MatIconModule, MatSidenavModule, SidenavComponent, HeaderComponent, FormsModule, ReactiveFormsModule, NgFor, MatDialogModule],
+  imports: [CommonModule, RouterOutlet, ChatComponent, ChatBubbleComponent, PromptInputComponent, MatButtonModule, MatIconModule, MatSidenavModule, SidenavComponent, HeaderComponent, FormsModule, ReactiveFormsModule, NgFor, MatDialogModule, BugReportComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   encapsulation: ViewEncapsulation.None

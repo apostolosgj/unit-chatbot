@@ -1,10 +1,8 @@
 <div class="input-wrapper">
-    <form class="form">
+    <form class="form" (ngSubmit)="sendMessage(promptText.value)">
         <input [formControl]="promptText" aria-label="prompt-input" placeholder="z.B. Wo finde ich die Chips?"
             class="prompt-input" id="prompt" required>
         <button mat-icon-button class="send-but"><mat-icon>mic</mat-icon></button>
-        <button mat-icon-button class="send-but" type="submit"
-            (click)="sendMessage(promptText.value)"><mat-icon>send</mat-icon>
-        </button>
+        <button mat-icon-button class="send-but" type="submit"><mat-icon>send</mat-icon></button>
     </form>
 </div>

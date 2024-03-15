@@ -2,6 +2,6 @@ export interface Message {
   sender:String;
   message:String;
   text?:String
-  timestamp:String;
+  timestamp:Date;
   image?:String;
 }

@@ -10,7 +10,9 @@
     />
   </div>
   <div class="bubble-content">
+    <span class="date">{{formatTimestamp(message.timestamp)}}</span>
     <p>{{ message.message }} {{ message.text }}</p>
-    <img *[ngClass]="message.image === '' ? 'hideImg' : 'showImg' " src="{{ message.image }}" />
+    @if (message.image) {
+      <img src="{{ message.image }}" />}
   </div>
 </div>
