@@ -9,6 +9,7 @@ import { elementAt, timestamp } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 import { botResponse } from '../../botResponse';
 import { consumerPollProducersForChange } from '@angular/core/primitives/signals';
+import { SpeechRecognitionService } from '../services/speech-recognition.service';
 
 @Component({
   selector: 'app-prompt-input',
@@ -18,7 +19,7 @@ import { consumerPollProducersForChange } from '@angular/core/primitives/signals
   styleUrl: './prompt-input.component.scss',
 })
 export class PromptInputComponent {
-  constructor(private messageService: MessageService) {}
+  constructor(private messageService: MessageService, private speechRecognition: SpeechRecognitionService ) {}
 
   promptText = new FormControl();
 
@@ -42,5 +43,10 @@ export class PromptInputComponent {
         });
       }, 2000);
     });
+  }
+
+  startRecording(){
+    
+    this.speechRecognition.startListening();
   }
 }
