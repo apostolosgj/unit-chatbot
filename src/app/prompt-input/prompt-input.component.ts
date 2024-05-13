@@ -1,15 +1,10 @@
-import { Component, ViewChild } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MessageService } from '../services/message.service';
-import { Message } from '../message';
-import { FormControl, NgForm } from '@angular/forms';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { elementAt, timestamp } from 'rxjs';
-import { HttpErrorResponse } from '@angular/common/http';
-import { botResponse } from '../../botResponse';
-import { consumerPollProducersForChange } from '@angular/core/primitives/signals';
-import { SpeechRecognitionService } from '../services/speech-recognition.service';
+import {Component} from '@angular/core';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MessageService} from '../services/message.service';
+import {Message} from '../message';
+import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {SpeechRecognitionService} from '../services/speech-recognition.service';
 
 @Component({
   selector: 'app-prompt-input',
@@ -43,10 +38,12 @@ export class PromptInputComponent {
         });
       }, 2000);
     });
+
+    this.promptText.reset();
   }
 
   startRecording(){
-    
+
     this.speechRecognition.startListening();
   }
 }

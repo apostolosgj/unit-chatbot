@@ -1,9 +1,11 @@
+@import "../../styles";
+
 .input-wrapper{
   display: flex;
   align-items: center;
   border-radius: 10px;
-  border-color: white;
   border: 1.9px solid white;
+  padding: .25rem;
 }
 
 .prompt-input{
@@ -35,4 +37,6 @@
   width: 100%;
 }
 
-
+.send-but:hover {
+  color: $color-hover;
+}

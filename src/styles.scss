@@ -36,9 +36,13 @@ $unit-chatbot-ui-theme: mat.define-light-theme((
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 body{
-  font-family: 'Work Sans';
+  font-family: 'Work Sans', sans-serif;
   color: white;
+  transition: all 0.2s ease-in-out;
 }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+$color-hover: #9171f8;
